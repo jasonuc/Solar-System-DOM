@@ -18,11 +18,11 @@ const planets = {
     pluto: 0.62 
 };
 
-const calculate = event => {
+const calculate = () => {
     let calculationResult;
     let weightInputVal = weightInput.value;
     let planetNameOptnVal = planetNameOptn.value;
-    if (weightInputVal && planetNameOptnVal) {
+    if (weightInputVal > 0 && planetNameOptnVal) {
         planetName.textContent = `This is planet ${planetNameOptn.value.toUpperCase()}`;
         weightInputVal = Number(weightInputVal);
         calculationResult = weightInputVal * planets[planetNameOptnVal];
