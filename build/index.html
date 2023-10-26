@@ -20,23 +20,34 @@
 
 	<header class="w-screen md:w-1/2 h-30 md:h-auto mx-auto border-solid flex gap-y-2 md:items-stretch items-center md:justify-between flex-col md:flex-row ">
 		<input type="text" id="mass" placeholder="Mass in Kilogram" 
-			class="h-8 w-1/2 md:w-1/4 placeholder:font-roboto-slab placeholder:font-bold even:mx-5 placeholder:text-center text-center" />
-		<select class="h-8 rounded-sm w-1/2 even:mx-5 text-center">
-			<option value='none'>--select planet-- </option>
+			class="weight-input rounded-md h-8 w-1/2 md:w-1/4 placeholder:font-roboto-slab placeholder:font-bold even:mx-5 placeholder:text-center text-center" /> <!-- weight-input -->
+
+		<select class="planet-name-optn h-8 rounded-md w-1/2 even:mx-5 text-center uppercase font-extrabold"> <!-- planet-name-optn -->
+			<option value='none'>--select planet--</option>
+			<option value='mercury'>mercury</option>
+			<option value='venus'>venus</option>
+			<option value='earth'>earth</option>
+			<option value='mars'>mars</option>
+			<option value='jupiter'>jupiter</option>
+			<option value='saturn'>saturn</option>
+			<option value='uranus'>uranus</option>
+			<option value='neptune'>neptune</option>
+			<option value='pluto'>pluto</option>
 		</select>
-		<button class="h-8 bg-white box-border rounded-md w-1/2 md:w-1/4 even:mx-5 text-center"><span
-				class="inline-block align-middle h-[100%] pt-1">Calculate weight</span></button>
+
+		<button class="calc-btn h-8 bg-slate-500 text-white box-border rounded-md w-1/2 md:w-1/4 even:mx-5 text-center"> <!-- calc-btn -->
+			<span class="inline-block align-middle h-[100%] pt-1 font-bold">Calculate weight</span>
+		</button>
 	</header>
 
 
 	<main class="flex items-center p-5 bg-gray-700 w-screen md:w-3/4 my-5 mx-auto h-auto rounded-md box-border text-black bg-opacity-[0.7] flex-col md:flex-col lg:flex-row lg:h-[35rem]">
-		<img src='./images/earth.png' class="mr-5" />
+		<img src='./images/earth.png' class="planet-image mr-5" /> <!-- planet-image -->
+
 		<div class="flex flex-col shrink-[100] justify-center max-h-[100%] min-w-0 w-full text-white">
-
-			<h2 class="font-oswald my-5 text-center text-2xl">This is planet earth</h2>
-
+			<h2 class="planet-name font-oswald my-5 text-center text-2xl">This is planet earth</h2> <!-- planet-name -->
 			<div class="font-roboto-slab flex justify-center bg-gray-700 bg-opacity-[0.7] mx-auto w-[60%] md:w-[25rem] h-[11rem] md:h-[25rem] rounded-full">
-				<p class="relative top-[45%] w-full text-center">This is the weight</p>
+				<p class="weight-on-planet relative top-[45%] w-full text-center">This is the weight</p> <!-- weight-on-planet -->
 			</div>
 		</div>
 	</main>
