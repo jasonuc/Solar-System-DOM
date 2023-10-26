@@ -18,5 +18,18 @@ const planets = {
     pluto: 0.62 
 };
 
-console.log(weightOnPlanet);
-console.log(planets);
+const calculate = event => {
+    let calculationResult;
+    let weightInputVal = weightInput.value;
+    let planetNameOptnVal = planetNameOptn.value;
+    if (weightInputVal && planetNameOptnVal) {
+        planetName.textContent = `This is planet ${planetNameOptn.value.toUpperCase()}`;
+        weightInputVal = Number(weightInputVal);
+        calculationResult = weightInputVal * planets[planetNameOptnVal];
+        weightOnPlanet.textContent = `The weight on this planet is ${calculationResult.toFixed(2)}kg`
+    } else {
+        console.warn('Input values before calculating result...')
+    }
+}
+
+calcBtn.addEventListener('click', calculate)
