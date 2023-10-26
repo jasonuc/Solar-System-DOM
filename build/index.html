@@ -13,21 +13,24 @@
 </head>
 
 <body class="bg-galaxy-gif bg-black bg-contain h-screen w-screen box-border overflow-x-hidden">
-
+	<!-- below works -->
 	<h1
-		class="font-frank-ruhl-libre text-5xl font-extrabold text-white text-center mt-5 mb-20 selection:bg-white selection:text-black">
+		class="font-frank-ruhl-libre text-5xl font-extrabold text-white text-center m-5 mb-20 selection:bg-white selection:text-black">
 		Calculate a weight of an object on a planet</h1>
+	<!-- above works -->
 
-	<header class="w-1/2 mx-auto border-solid border-blue-100 border-2 flex items-stretch justify-between flex-col md:flex-row ">
-		<input type="text" id="mass" placeholder="Mass in Kilogram"
-			class="h-8 w-1/4 placeholder:font-roboto-slab placeholder:font-bold even:mx-5 placeholder:text-center text-right" />
+	<!-- <header class="w-screen md:w-1/2 h-30 md:h-auto mx-auto border-solid border-blue-100 border-2 flex gap-y-2 md:items-stretch items-center md:justify-between flex-col md:flex-row "> -->
+	<header class="w-screen md:w-1/2 h-30 md:h-auto mx-auto border-solid border-blue-100 flex gap-y-2 md:items-stretch items-center md:justify-between flex-col md:flex-row ">
+		<input type="text" id="mass" placeholder="Mass in Kilogram" 
+			class="h-8 w-1/2 md:w-1/4 placeholder:font-roboto-slab placeholder:font-bold even:mx-5 placeholder:text-center text-right" />
 		<select class="h-8 rounded-sm w-1/2 even:mx-5">
 			<option value='none'>--select planet-- </option>
 		</select>
-		<button class="h-8 bg-white box-border rounded-md w-1/4 even:mx-5"><span
+		<button class="h-8 bg-white box-border rounded-md w-1/2 md:w-1/4 even:mx-5"><span
 				class="inline-block align-middle h-[100%] pt-1">Calculate weight</span></button>
-
 	</header>
+
+
 	<main class="flex items-center p-5 bg-gray-700 w-3/4 my-5 mx-auto h-auto rounded-md box-border text-black bg-opacity-[0.7] flex-col md:flex-col lg:flex-row lg:h-[35rem]">
 		<img src='./images/earth.png' class="mr-5" />
 		<div class="flex shrink-[100] flex-col justify-center max-h-[100%] min-w-0 border-solid border-white border-2 w-full text-white">
