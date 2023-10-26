@@ -852,6 +852,10 @@ video {
   line-height: 1;
 }
 
+.text-\[5px\] {
+  font-size: 5px;
+}
+
 .font-extrabold {
   font-weight: 800;
 }
@@ -979,6 +983,22 @@ video {
   .md\:justify-between {
     justify-content: space-between;
   }
+
+  .md\:text-\[20px\] {
+    font-size: 20px;
+  }
+
+  .md\:font-\[10px\] {
+    font-weight: 10px;
+  }
+
+  .md\:font-\[1rem\] {
+    font-weight: 1rem;
+  }
+
+  .md\:font-\[20px\] {
+    font-weight: 20px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -992,5 +1012,9 @@ video {
 
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:text-\[20px\] {
+    font-size: 20px;
   }
 }
