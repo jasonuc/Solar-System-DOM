@@ -3,36 +3,38 @@
 
 <head>
 	<title>Solar System: Document Object Model:30 Days Of JavaScript</title>
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="./css/reset.css">
 	<link rel="stylesheet" href="./css/output.css">
-	<script src="./scripts/main.js" defer></script>
 </head>
 
-<body>
-	<header class="space-y-5">
-		<h1 class="font-mono text-3xl text-center mt-5 underline underline-offset-4 selection:bg-black selection:text-white">Calculate a weight of an object on a planet</h1>
-		<input type="text" id="mass" placeholder="Mass in Kilogram" />
-		<select>
+<body class="bg-galaxy-gif bg-contain h-screen w-screen box-border overflow-hidden">
+
+	<h1
+		class="font-frank-ruhl-libre text-5xl font-extrabold text-white text-center mt-5 mb-20 selection:bg-white selection:text-black">
+		Calculate a weight of an object on a planet</h1>
+
+	<header class="w-1/2 mx-auto border-solid  border-blue-100 flex items-stretch justify-between">
+		<input type="text" id="mass" placeholder="Mass in Kilogram"
+			class="h-8 w-1/4 placeholder:font-roboto-slab placeholder:font-bold even:mx-5" />
+		<select class="h-8 rounded-sm w-1/2 even:mx-5">
 			<option value='none'>--select planet-- </option>
 		</select>
-		<button>Calculate weight</button>
+		<button class="h-8 bg-white box-border rounded-md w-1/4 even:mx-5"><span
+				class="inline-block align-middle h-[100%] pt-1">Calculate weight</span></button>
 
 	</header>
-	<main>
-		<div class="flex-container">
-			<div class="flex-item image">
-				<img src='./images/earth.png' class="planet-image" />
-			</div>
-			<div class="flex-item description"></div>
-
+	<main class="flex items-center p-5 bg-gray-700 w-3/4 my-5 mx-auto h-[35rem] rounded-md box-border text-black bg-opacity-[0.7]">
+		<img src='./images/earth.png' class="mr-5" />
+		<div class="flex flex-col justify-center h-[100%] border-solid border-black border-2 w-full text-white ">
+			<h2 class="font-oswald my-5 text-center text-2xl">This is planet earth</h2>
+			<p class="font-roboto-slab bg-opacity-[0.7] bg-gray-700 mx-auto text-center w-[25rem] h-[25rem] rounded-full border-solid border-white border-2">This is the weight</p>
 		</div>
-
-
 	</main>
-
-
-
-
 
 	<script src="./scripts/main.js"></script>
 </body>
