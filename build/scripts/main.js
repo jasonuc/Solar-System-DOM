@@ -27,6 +27,8 @@ const calculate = () => {
         weightInputVal = Number(weightInputVal);
         calculationResult = weightInputVal * planets[planetNameOptnVal];
         weightOnPlanet.textContent = `The weight on this planet is ${calculationResult.toFixed(2)}kg`
+        weightInput.value = undefined;
+        planetNameOptn.value = 'none';
     } else {
         console.warn('Input values before calculating result...')
     }
