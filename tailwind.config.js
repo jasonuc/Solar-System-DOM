@@ -26,7 +26,8 @@ module.exports = {
         'saturn': "url('../images/saturn.png')",
         'uranus': "url('../images/uranus.png')",
         'venus': "url('../images/venus.png')"
-      }
+      },
+      
     },
   },
   plugins: [],

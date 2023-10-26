@@ -12,13 +12,13 @@
 	<link rel="stylesheet" href="./css/output.css">
 </head>
 
-<body class="bg-galaxy-gif bg-contain h-screen w-screen bg-black box-border overflow-hidden">
+<body class="bg-galaxy-gif bg-black bg-contain h-screen w-screen box-border overflow-x-hidden">
 
 	<h1
 		class="font-frank-ruhl-libre text-5xl font-extrabold text-white text-center mt-5 mb-20 selection:bg-white selection:text-black">
 		Calculate a weight of an object on a planet</h1>
 
-	<header class="w-1/2 mx-auto border-solid  border-blue-100 flex items-stretch justify-between">
+	<header class="w-1/2 mx-auto border-solid border-blue-100 border-2 flex items-stretch justify-between flex-col md:flex-row ">
 		<input type="text" id="mass" placeholder="Mass in Kilogram"
 			class="h-8 w-1/4 placeholder:font-roboto-slab placeholder:font-bold even:mx-5 placeholder:text-center text-right" />
 		<select class="h-8 rounded-sm w-1/2 even:mx-5">
@@ -28,13 +28,13 @@
 				class="inline-block align-middle h-[100%] pt-1">Calculate weight</span></button>
 
 	</header>
-	<main class="flex items-center p-5 bg-gray-700 w-3/4 my-5 mx-auto h-[35rem] rounded-md box-border text-black bg-opacity-[0.7]">
+	<main class="flex items-center p-5 bg-gray-700 w-3/4 my-5 mx-auto h-auto rounded-md box-border text-black bg-opacity-[0.7] flex-col md:flex-col lg:flex-row lg:h-[35rem]">
 		<img src='./images/earth.png' class="mr-5" />
-		<div class="flex shrink-[10] flex-col justify-center h-[100%] border-solid border-black border-2 w-full text-white">
+		<div class="flex shrink-[100] flex-col justify-center max-h-[100%] min-w-0 border-solid border-white border-2 w-full text-white">
 
 			<h2 class="font-oswald my-5 text-center text-2xl">This is planet earth</h2>
 
-			<div class="font-roboto-slab flex justify-center bg-gray-700 bg-opacity-[0.7] mx-auto w-[25rem] h-[25rem] rounded-full border-solid border-white border-2">
+			<div class="font-roboto-slab flex justify-center bg-gray-700 bg-opacity-[0.7] mx-auto min-w-[25rem] h-[25rem] rounded-full border-solid border-white border-2">
 				<p class="relative top-[45%] border-solid border-white border-2 h-8 w-full text-center">This is the weight</p>
 			</div>
 		</div>
