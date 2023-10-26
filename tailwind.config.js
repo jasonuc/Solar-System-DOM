@@ -16,16 +16,6 @@ module.exports = {
       },
       backgroundImage: {
         'galaxy-gif': "url('../images/galaxy.gif')",
-        'earth': "url('../images/earth.png')",
-        'jupiter': "url('../images/jupiter.png')",
-        'mars': "url('../images/mars.png')",
-        'mercury': "url('../images/mercury.png')",
-        'moon': "url('../images/moon.png')",
-        'neptune': "url('../images/neptune.png')",
-        'pluto': "url('../images/pluto.png')",
-        'saturn': "url('../images/saturn.png')",
-        'uranus': "url('../images/uranus.png')",
-        'venus': "url('../images/venus.png')"
       },
       
     },

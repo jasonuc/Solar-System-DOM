@@ -27,7 +27,7 @@ const calculate = () => {
         weightInputVal = Number(weightInputVal);
         calculationResult = weightInputVal * planets[planetNameOptnVal];
         weightOnPlanet.textContent = `The weight on this planet is ${calculationResult.toFixed(2)}kg`
-        planetImg.src = `../build/images/${planetNameOptnVal}.png`
+        planetImg.src = `../images/${planetNameOptnVal}.png`
         weightInput.value = undefined;
         planetNameOptn.value = 'none';
     } else {
